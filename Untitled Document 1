@@ -1,0 +1,352 @@
+wdd@webdev:~$ mkdir -p os3/x00118543/scripts
+wdd@webdev:~$ os3/x00118543/scripts dir
+bash: os3/x00118543/scripts: Is a directory
+wdd@webdev:~$ gedit
+
+(gedit:2860): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+^C
+^C
+wdd@webdev:~$ gedit
+^C
+wdd@webdev:~$ mkdir dir1
+wdd@webdev:~$ mkdir dir2
+wdd@webdev:~$ cd dir1/dir2
+bash: cd: dir1/dir2: No such file or directory
+wdd@webdev:~$ dir
+Desktop  dir2	    Downloads  os3	 play	 scripts    Videos
+dir1	 Documents  Music      Pictures  Public  Templates  webapps
+wdd@webdev:~$ cd scripts
+wdd@webdev:~/scripts$ cd ..
+wdd@webdev:~$ cd os3/x00118543/scripts
+wdd@webdev:~/os3/x00118543/scripts$ cd ..
+wdd@webdev:~/os3/x00118543$ remove dir1
+remove: command not found
+wdd@webdev:~/os3/x00118543$ help
+GNU bash, version 4.3.46(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                            history [-c] [-d offset] [n] or hist>
+ (( expression ))                        if COMMANDS; then COMMANDS; [ elif C>
+ . filename [arguments]                  jobs [-lnprs] [jobspec ...] or jobs >
+ :                                       kill [-s sigspec | -n signum | -sigs>
+ [ arg... ]                              let arg [arg ...]
+ [[ expression ]]                        local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]          logout [n]
+ bg [job_spec ...]                       mapfile [-n count] [-O origin] [-s c>
+ bind [-lpsvPSVX] [-m keymap] [-f file>  popd [-n] [+N | -N]
+ break [n]                               printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]       pushd [-n] [+N | -N | dir]
+ caller [expr]                           pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...)>  read [-ers] [-a array] [-d delim] [->
+ cd [-L|[-P [-e]] [-@]] [dir]            readarray [-n count] [-O origin] [-s>
+ command [-pVv] command [arg ...]        readonly [-aAf] [name[=value] ...] o>
+ compgen [-abcdefgjksuv] [-o option]  >  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE] >  select NAME [in WORDS ... ;] do COMM>
+ compopt [-o|+o option] [-DE] [name ..>  set [-abefhkmnptuvxBCHP] [-o option->
+ continue [n]                            shift [n]
+ coproc [NAME] command [redirections]    shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgilnrtux] [-p] [name[=v>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                  suspend [-f]
+ disown [-h] [-ar] [jobspec ...]         test [expr]
+ echo [-neE] [arg ...]                   time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [na>  times
+ eval [arg ...]                          trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argume>  true
+ exit [n]                                type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or ex>  typeset [-aAfFgilrtux] [-p] name[=va>
+ false                                   ulimit [-SHabcdefilmnpqrstuvxT] [lim>
+ fc [-e ename] [-lnr] [first] [last] o>  umask [-p] [-S] [mode]
+ fg [job_spec]                           unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMAND>  unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMAN>  until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name >  variables - Names and meanings of so>
+ getopts optstring name [arg]            wait [-n] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name >  while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]               { COMMANDS ; }
+wdd@webdev:~/os3/x00118543$ rm dir1
+rm: cannot remove 'dir1': No such file or directory
+wdd@webdev:~/os3/x00118543$ 
+wdd@webdev:~/os3/x00118543$ 
+wdd@webdev:~/os3/x00118543$ 
+wdd@webdev:~/os3/x00118543$ 
+wdd@webdev:~/os3/x00118543$ 
+wdd@webdev:~/os3/x00118543$ cd ..
+wdd@webdev:~/os3$ cd ..
+wdd@webdev:~$ 
+wdd@webdev:~$ 
+wdd@webdev:~$ mkdir -p dir1/dir2
+wdd@webdev:~$ cd dir1/dir2
+wdd@webdev:~/dir1/dir2$ cd ..
+wdd@webdev:~/dir1$ cd ..#
+bash: cd: ..#: No such file or directory
+wdd@webdev:~/dir1$ cd ..
+wdd@webdev:~$ rm dir1
+rm: cannot remove 'dir1': Is a directory
+wdd@webdev:~$ dir
+Desktop  dir2	    Downloads  os3	 play	 scripts    Videos
+dir1	 Documents  Music      Pictures  Public  Templates  webapps
+wdd@webdev:~$ ls
+Desktop  dir2       Downloads  os3       play    scripts    Videos
+dir1     Documents  Music      Pictures  Public  Templates  webapps
+wdd@webdev:~$ ls > dir1
+bash: dir1: Is a directory
+wdd@webdev:~$ cd dir1/dir2
+wdd@webdev:~/dir1/dir2$ gedit
+
+(gedit:2906): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+^C
+wdd@webdev:~/dir1/dir2$ ls
+file1
+wdd@webdev:~/dir1/dir2$ ls > file1
+wdd@webdev:~/dir1/dir2$ ls dir1 > out1
+ls: cannot access 'dir1': No such file or directory
+wdd@webdev:~/dir1/dir2$ gedit
+^C
+wdd@webdev:~/dir1/dir2$ ls dir1 > out1
+ls: cannot access 'dir1': No such file or directory
+wdd@webdev:~/dir1/dir2$ ls dir2  > out2
+ls: cannot access 'dir2': No such file or directory
+wdd@webdev:~/dir1/dir2$ cd ..
+wdd@webdev:~/dir1$ 
+wdd@webdev:~/dir1$ ls dir1 > out1
+ls: cannot access 'dir1': No such file or directory
+wdd@webdev:~/dir1$ cd ..
+wdd@webdev:~$ cd dir1\dir2
+bash: cd: dir1dir2: No such file or directory
+wdd@webdev:~$ cd dir1/dir2
+wdd@webdev:~/dir1/dir2$ gedit
+wdd@webdev:~/dir1/dir2$ 
+wdd@webdev:~/dir1/dir2$ 
+wdd@webdev:~/dir1/dir2$ 
+wdd@webdev:~/dir1/dir2$ ls/bin/*>file1
+bash: ls/bin/*: No such file or directory
+wdd@webdev:~/dir1/dir2$ 
+wdd@webdev:~/dir1/dir2$ 
+wdd@webdev:~/dir1/dir2$ cat file1|tail -5
+wdd@webdev:~/dir1/dir2$ dir
+file1  out1  out2
+wdd@webdev:~/dir1/dir2$ gedit
+wdd@webdev:~/dir1/dir2$ cd out1
+bash: cd: out1: Not a directory
+wdd@webdev:~/dir1/dir2$ cd -p os3/x00118543/scripts
+bash: cd: -p: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+wdd@webdev:~/dir1/dir2$ cd ..
+wdd@webdev:~/dir1$ cd ..
+wdd@webdev:~$ cd -p os3/x00118543/scripts
+bash: cd: -p: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+wdd@webdev:~$ cd -p os3/x00118543/scripts
+bash: cd: -p: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+wdd@webdev:~$ cd -p os3/x00118543/scripts
+bash: cd: -p: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+wdd@webdev:~$ cd os3/x00118543/scripts
+wdd@webdev:~/os3/x00118543/scripts$ mkdir -p dir1/dir2
+wdd@webdev:~/os3/x00118543/scripts$ cd dir1/dir2
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls > file1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ dir
+file1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls dir1>out1
+ls: cannot access 'dir1': No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls
+file1  out1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls dir2>>out2
+ls: cannot access 'dir2': No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls
+file1  out1  out2
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cat file1|tail-5
+tail-5: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cat file1 | tail-5
+tail-5: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls/bin/*>file1
+bash: ls/bin/*: No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls/bin/*|tail -5
+bash: ls/bin/*: No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls /bin/*>file1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ dir
+file1  out1  out2
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd dir1/dir2
+bash: cd: dir1/dir2: No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd..
+cd..: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd .
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd .
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd dir1/dir2
+bash: cd: dir1/dir2: No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ mkdir test1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd test1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test1$ cp/bin/b* .
+bash: cp/bin/b*: No such file or directory
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test1$ cp /bin/b* .
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test1$ cd ..
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ dir
+file1  out1  out2  test1
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ tar cvf test1.tar test1
+test1/
+test1/bzegrep
+test1/bzdiff
+test1/bzmore
+test1/bzip2
+test1/bzcat
+test1/bzless
+test1/bunzip2
+test1/bzexe
+test1/bash
+test1/busybox
+test1/bzfgrep
+test1/bzgrep
+test1/bzcmp
+test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ tar zcvf test1.tgz test1
+test1/
+test1/bzegrep
+test1/bzdiff
+test1/bzmore
+test1/bzip2
+test1/bzcat
+test1/bzless
+test1/bunzip2
+test1/bzexe
+test1/bash
+test1/busybox
+test1/bzfgrep
+test1/bzgrep
+test1/bzcmp
+test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls -|
+> -rw-rw-r-- 1 rbnachor rbnachor x00118543 Nov 25 11:00 test1.tar
+ls: cannot access '-': No such file or directory
+-rw-rw-r--: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls -| -rw-rw-r-- 1 rbnachor rbnachor x00118543 Nov 25 11:00 test1.tar
+ls: cannot access '-': No such file or directory
+-rw-rw-r--: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls -|
+> -rw-rw-r--1 rbnachor rbnachor x00118543 Nov 25 11:00 test1.tar
+ls: cannot access '-': No such file or directory
+-rw-rw-r--1: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls -|
+> ls -| -rw-rw-r--1 rbnachor rbnachor x00118543 Nov 25 11:00 test1.tgz
+ls: ls: cannot access '-'cannot access '-': No such file or directory: No such file or directory
+
+-rw-rw-r--1: command not found
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ ls -|
+> cp /bin/b* .^C
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ tar tvf test1.tar
+drwxrwxr-x wdd/wdd           0 2016-11-25 10:58 test1/
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzegrep
+-rwxr-xr-x wdd/wdd        2140 2016-11-25 10:58 test1/bzdiff
+-rwxr-xr-x wdd/wdd        1297 2016-11-25 10:58 test1/bzmore
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bzip2
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bzcat
+-rwxr-xr-x wdd/wdd        1297 2016-11-25 10:58 test1/bzless
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bunzip2
+-rwxr-xr-x wdd/wdd        4877 2016-11-25 10:58 test1/bzexe
+-rwxr-xr-x wdd/wdd     1037528 2016-11-25 10:58 test1/bash
+-rwxr-xr-x wdd/wdd     1964536 2016-11-25 10:58 test1/busybox
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzfgrep
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzgrep
+-rwxr-xr-x wdd/wdd        2140 2016-11-25 10:58 test1/bzcmp
+-rwxr-xr-x wdd/wdd       14616 2016-11-25 10:58 test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ tar ztvf test1.tgz
+drwxrwxr-x wdd/wdd           0 2016-11-25 10:58 test1/
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzegrep
+-rwxr-xr-x wdd/wdd        2140 2016-11-25 10:58 test1/bzdiff
+-rwxr-xr-x wdd/wdd        1297 2016-11-25 10:58 test1/bzmore
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bzip2
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bzcat
+-rwxr-xr-x wdd/wdd        1297 2016-11-25 10:58 test1/bzless
+-rwxr-xr-x wdd/wdd       31288 2016-11-25 10:58 test1/bunzip2
+-rwxr-xr-x wdd/wdd        4877 2016-11-25 10:58 test1/bzexe
+-rwxr-xr-x wdd/wdd     1037528 2016-11-25 10:58 test1/bash
+-rwxr-xr-x wdd/wdd     1964536 2016-11-25 10:58 test1/busybox
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzfgrep
+-rwxr-xr-x wdd/wdd        3642 2016-11-25 10:58 test1/bzgrep
+-rwxr-xr-x wdd/wdd        2140 2016-11-25 10:58 test1/bzcmp
+-rwxr-xr-x wdd/wdd       14616 2016-11-25 10:58 test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ mkdir test2 test3
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2$ cd test2
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ tar xvf ../test1.tar .
+tar: .: Not found in archive
+tar: Exiting with failure status due to previous errors
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ tar xvf ../test1.tar.
+tar: ../test1.tar.: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ tar xvf../test1.tar.
+tar: Old option 'f' requires an argument.
+Try 'tar --help' or 'tar --usage' for more information.
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ 
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ ls -R
+.:
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ tar xvf ../test1.tar
+test1/
+test1/bzegrep
+test1/bzdiff
+test1/bzmore
+test1/bzip2
+test1/bzcat
+test1/bzless
+test1/bunzip2
+test1/bzexe
+test1/bash
+test1/busybox
+test1/bzfgrep
+test1/bzgrep
+test1/bzcmp
+test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test2$ cd ../test3
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test3$ tar zxvf ../test1.tgz
+test1/
+test1/bzegrep
+test1/bzdiff
+test1/bzmore
+test1/bzip2
+test1/bzcat
+test1/bzless
+test1/bunzip2
+test1/bzexe
+test1/bash
+test1/busybox
+test1/bzfgrep
+test1/bzgrep
+test1/bzcmp
+test1/bzip2recover
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test3$ ls -R
+.:
+test1
+
+./test1:
+bash     busybox  bzcmp   bzegrep  bzfgrep  bzip2         bzless
+bunzip2  bzcat    bzdiff  bzexe    bzgrep   bzip2recover  bzmore
+wdd@webdev:~/os3/x00118543/scripts/dir1/dir2/test3$ gedit
+
+
